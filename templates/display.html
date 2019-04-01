@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sample3</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>pid</th>
+        <th>pname</th>
+    </tr>
+    {% for recs in records %}
+    <tr>
+        <td>{{ recs.pid }}</td>
+        <td>{{ recs.pname }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+<a href="/restapp2">click here to insert </a>
+</body>
+</html>
